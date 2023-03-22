@@ -82,12 +82,14 @@ const App = () => {
 
     <div className="app">
       <div className="search-background">
+        <h1>Найди свое счастье!</h1>
         <div className="search-bar">
+          
           <input
             type="text"
             value={searchQuery}
             onChange={handleSearchInputChange}
-            placeholder="Search by book title"
+            placeholder="Поиск в базе..."
           />
           <button onClick={handleSearchButtonClick} disabled={isSearching}>
             {isSearching ? 'Searching...' : 'Search'}
@@ -95,7 +97,7 @@ const App = () => {
         </div>
         <div className="filter-bar">
           <div>
-          <label htmlFor="category">Category:</label>
+          <label htmlFor="category">Категории:</label>
           <select id="category" value={selectedCategory} onChange={(event) => handleCategoryChange(event.target.value)}>
             {categories.map((category) => (
               <option key={category} value={category}>
@@ -105,7 +107,7 @@ const App = () => {
           </select>
           </div>
           <div>
-          <label className='sort-label' htmlFor="sortOption">Sort by:</label>
+          <label className='sort-label' htmlFor="sortOption">Сортировка:</label>
           <select id="sortOption" value={selectedSortOption} onChange={(event) => handleSortOptionChange(event.target.value)}>
             {sortOptions.map((sortOption) => (
               <option key={sortOption} value={sortOption}>
@@ -116,7 +118,7 @@ const App = () => {
           </div>
         </div>
       </div>
-      <div className="result-count">Found {totalItems} results</div>
+      <div className="result-count">Найдено {totalItems} книг</div>
       <div className="book-list">
         {isLoading ? <Spinner /> : books.map((book) => (
           <BookCard key={book.id} book={book.volumeInfo} />
@@ -125,7 +127,7 @@ const App = () => {
       </div>
       {books.length > 0 && books.length < totalItems && (
         <div className="load-more">
-          <button onClick={handleLoadMoreClick}>Load more</button>
+          <button onClick={handleLoadMoreClick}>Загрузить ещё</button>
         </div>
       )}
     </div>
