@@ -140,7 +140,6 @@ h3 {
   .load-more {
     margin: 40px 0px;
     width: 100%;
-    /* border: 2px solid red; */
     display: flex;
     justify-content: center;
   }
@@ -193,7 +192,6 @@ h3 {
     text-align: center;
     justify-content: center;
     gap: 15px;
-    /* border: 1px solid red; */
     background: aliceblue;
   }
   .book-card__img {
@@ -223,7 +221,6 @@ h3 {
   }
   .search-bar {
     width: 88%;
-    /* border: 2px solid red; */
     margin: 0 auto;
     position: relative;
     
@@ -284,7 +281,6 @@ h3 {
   .load-more {
     margin-top: 40px;
     width: 100%;
-    /* border: 2px solid red; */
     display: flex;
     justify-content: center;
   }
@@ -298,31 +294,6 @@ h3 {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   }
 }
-  
-
-
-/* .spinner {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  border: 3px solid rgba(0, 0, 0, 0.3);
-  border-radius: 50%;
-  border-top-color: #333;
-  animation: spin 1s ease-in-out infinite;
-  -webkit-animation: spin 1s ease-in-out infinite;
-}
-
-@keyframes spin {
-  to {
-    -webkit-transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes spin {
-  to {
-    -webkit-transform: rotate(360deg);
-  }
-} */
 
 .book {
   --color: blue;
